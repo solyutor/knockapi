@@ -7,6 +7,7 @@ namespace KnockApi
     {
         public void Configuration(IAppBuilder app)
         {
+            app.UseStaticFiles();
             app.UseWebApi(new HttpConfiguration());
         }
     }
